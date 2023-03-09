@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+:root{
+    --bg-color: linear-gradient(65deg,rgb(199, 184, 184) 0%,rgb(241, 227, 227) 50%,rgb(209, 189, 189) 100%);
+    --dark-color: rgb(0, 0, 0);
+    --light-color: rgb(243, 236, 236);
+    --main-color: rgb(202, 39, 74); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Quicksand';
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    
+    background: var(--bg-color);
+    color: var(--dark-color);
+}
+/* Navigation bar editing */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: static;
+    z-index: 10;
+}
+#Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Links a{
+    margin: auto 0.8vmax;
+}
+#Links p{
+    margin: auto 0.8vmax;
+    transition: all ease 0.5s;
+}
+#Links p:hover{color: var(--main-color);}
+a{
+    font-size: 1.6vmax;
+    transition: all ease 0.5s;
+    color: var(--dark-color);
+}
+a:hover{
+    color: var(--main-color);
+}
+.insi{
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--light-color);
+    border-radius: 2rem;
+    padding: 0.4rem 2.4rem;
+    margin: auto 1vmax;
+    border: 1px solid transparent;
+}
+.insi:hover{
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+#Wel{
+    width: 90%;
+    height: 100%;
+    margin: auto auto;
+}
+#apple{
+    font-size: 3vmax;
+    transition: all ease 0.8s;
+}
+#apple:hover{
+    color: aliceblue;
+    transform: scale(1.1,1.1,1.1);  
+    text-shadow: -2px -2px rgb(36, 34, 34);  
+}
+#Welcome{
+    display: grid;
+    grid-template-columns: 60vw 30vw;
+}
+#image{
+    width: 30vmax;
+    height: auto;
+    margin-top: 5%;
+    position: absolute;
+    transform: rotate(35deg);
+    z-index: 0;
+    transition: all 1s ease;
+}
+#image:hover{
+    transform: rotate(0deg) scale(1.2);
+}
+#left{
+    margin-top: 6%;
+   
+}
+#left h2{
+    font-size: 7vmax;
+    color: var(--main-color);
+    margin: 0.5vmax auto;
+}
+#left h1{
+    font-size: 4vmax;
+}
+#info{
+    margin-bottom: 1vmax;
+}
+#right{
+    place-items: center;
+    align-items: center;
+    justify-items: center;
+    }
+#background{
+    position: absolute;
+    z-index: -1;
+    width: 20vmax;
+    height: 20vmax;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-top: 10vmax;
+    margin-left: 2.2vmax;
+    
+}
